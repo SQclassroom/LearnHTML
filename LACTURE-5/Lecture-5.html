@@ -1,122 +1,124 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Html</title>
-        <style>
-            table, th, td{
-                border:1px solid black;
-                border-collapse: collapse;
-                text-align: center;
-                width: 600PX;
-            }
-        </style>
-    </head>
-    <body>
-        <!-- Html Table Tag -->
-            <table>
-                <caption> This is Table Tag </caption>
-                <thead>
-                    <tr>
-                        <th>NO.</th>
-                        <th>Full Name</th>
-                        <th>Position</th>
-                        <th>Salary</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>1</td>
-                        <td>Bill Gates</td>
-                        <td>Founder Microsoft</td>
-                        <td>$1000</td>
-                    </tr>
-                    <tr>
-                        <td>2</td>
-                        <td>Steave Jobs</td>
-                        <td>Founder Apple</td>
-                        <td>$1200</td>
-                    </tr>
-                    <tr>
-                        <td>3</td>
-                        <td>Larry Page</td>
-                        <td>Founder Google</td>
-                        <td>$1100</td>
-                    </tr>
-                    <tr>
-                        <td>4</td>
-                        <td>Mark Zukerburg</td>
-                        <td>Founder Facebook</td>
-                        <td>$1300</td>
-                    </tr>
-                </tbody>
-            </table>
 
-        <!-- colspan and rowspan in html table -->
+<head>
+    <title>Html</title>
+    <style>
+        table, th, td{
+            border:1px solid rgb(10, 77, 0);
+            text-align: center;
+        }
+        table{
+            height: 100px;
+            width: 300px;
+        }
+    </style>
+</head>
 
-            <table>
-                <caption> This is Table Tag </caption>
-                    <tr>
-                        <th colspan="2">Full Name</th>
-                        <!-- <th>Last_Name</th> -->
-                        <th>Marks</th>
-                    </tr>
-                    <tr>
-                        <td>sonoo</td>
-                        <td>jaiswal</td>
-                        <td>60</td>
-                    </tr>
-                    <tr>
-                        <td>james</td>
-                        <td>william</td>
-                        <td rowspan="3">80</td>
-                    </tr>
-                    <tr>
-                        <td>swati</td>
-                        <td>sironi</td>
-                        <!-- <td>80</td> -->
-                    </tr>
-                    <tr>
-                        <td>chetna</td>
-                        <td>sironi</td>
-                        <!-- <td>80</td> -->
-                    </tr>
-            </table>
+<body>
+    <!-- Html Table Tag -->
 
-        <!-- colgroup in html table -->
+    <!-- <table>
+        <caption>this is html table</caption>
+        <tr>
+            <th>No.</th>
+            <th>Full Name</th>
+            <th>Position</th>
+            <th>Salary</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>Bill Gates</td>
+            <td>Founder Microsoft</td>
+            <td>$1000</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Steve Jobs</td>
+            <td>Founder Apple</td>
+            <td>$1200</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>Larry Page</td>
+            <td>Founder Google</td>
+            <td>$1100</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>Mark Zukerburg</td>
+            <td>Founder Facebook</td>
+            <td>$1300</td>
+        </tr>
+    </table> -->
 
-            <table>
-                <caption> This is Table Tag </caption>
-                <colgroup>
-                    <col span="3" bgcolor="red">
-                    <col span="1" bgcolor="yellow">
-                    <col span="1" bgcolor="blue">
-                </colgroup>
+    <!-- colspan and rowspan in html table -->
+
+
+        <!-- <table>
+            <caption>A text table with merged cells</caption>
+            <tr>
+                <th rowspan="2"></th>
+                <th colspan="2">Average</th>
+                <th rowspan="2">Read<br> eyes</th>
+            </tr>
+            <tr>
+                <th>Height</th>
+                <th>Width</th>
+            </tr>
+            <tr>
+                <th>Males</th>
+                <td>1.9</td>
+                <td>0.003</td>
+                <td>40%</td>
+            </tr>
+            <tr>
+                <th>Females</th>
+                <td>1.7</td>
+                <td>0.002</td>
+                <td>43%</td>
+            </tr>
+        </table> -->
+
+
+
+    <!-- colgroup in html table -->
+
+        <table>
+            <colgroup>
+                <col span="1" bgcolor="yellow">
+            </colgroup>
+            <thead>
+                <tr style="background-color: yellow;">
+                    <th>Sr. no.</th>
+                    <th>Roll no</th>
+                    <th>Name</th>
+                    <th>Team</th>
+                </tr>
+            </thead>
+            <tbody>
                 <tr>
-                    <th>First_Name</th>
-                    <th>Last_Name</th>
-                    <th>Marks</th>
+                    <td>1</td>
+                    <td>1001</td>
+                    <td>John</td>
+                    <td>Red</td>
                 </tr>
                 <tr>
-                    <td>sonoo</td>
-                    <td>jaiswal</td>
-                    <td>60</td>
+                    <td>2</td>
+                    <td>1002</td>
+                    <td>Peter</td>
+                    <td>Blue</td>
                 </tr>
                 <tr>
-                    <td>james</td>
-                    <td>william</td>
-                    <td>80</td>
+                    <td>3</td>
+                    <td>1003</td>
+                    <td>Henry</td>
+                    <td>Green</td>
                 </tr>
-                <tr>
-                    <td>swati</td>
-                    <td>sironi</td>
-                    <td>82</td>
-                </tr>
-                <tr>
-                    <td>chetna</td>
-                    <td>singh</td>
-                    <td>72</td>
-                </tr>
-            </table>
-        
-    </body>
+            </tbody>
+        </table>
+
+
+</body>
+
 </html>
