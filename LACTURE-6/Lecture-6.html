@@ -6,18 +6,20 @@
     <meta name="keyword" content="keyword">
     <meta name="discription" content="discription">
     <meta name="author" content="author">
-    <meta name="viewport" content="width=device-width , initial-scale=1.0">
+    <meta name="viewport" content="width=device-width , initial-scal e=1.0">
     <title>HTML</title>
     <!-- favicone tag-->
     <link rel="icon" type="x-icon/image" href="asset/good-icon.webp">
     <style>
-        /* form {
+        form {
             background-color: rgb(153, 255, 0);
             text-align: center;
-        } */
-        /* legend{
+            width: 500px;
+            margin: auto;
+        }
+        legend{
             text-align: center;
-        } */
+        }
         /* nav a{
             text-decoration: none;
             color:green;
@@ -51,25 +53,28 @@
     -->
     <!-- textarea-->
 
-    <textarea cols="20" rows="5"></textarea>
+    <!-- <textarea cols="20" rows="50" style="resize:horizontal"></textarea> -->
 
     <!-- select tag / inline tag -->
 
-        <select name="" value="">
-            <option value="none" selected>none</option>
+        <!-- <select name="browsers" value="" id="selectdemo">
+            <option value="none">none</option>
             <option value="Opera">Opera</option>
             <option value="Crome">Crome</option>
             <option value="Firefox">Firefox</option>
             <option value="Safari" >Safari</option>
-            <option value="Microsoft Edge">Microsoft Edge</option>
+            <option value="Microsoft Edge" selected>Microsoft Edge</option>
             <option value="dog">Dog</option>
             <option value="cat">Cat</option>
             <option value="spider">Spider</option>
             <option value="ants">Ants</option>
             <option value="goldfish">Goldfish</option>
-        </select>
+        </select> -->
 
-        <select id="pets" name="" value="">
+        <!-- <button onclick = "myFunction()">Click</button>
+        <div id="demo"></div> -->
+
+        <!-- <select id="pets" name="" value="">
             <optgroup label="Animal">
                 <option value="Dog">Dog</option>
                 <option value="Cat">Cat</option>
@@ -81,10 +86,10 @@
             <optgroup label="Fish">
                 <option value="Goldfish">Goldfish</option>
             </optgroup>
-        </select>
+        </select> -->
 
     <!-- datalist tag / inline tag  -->
-
+<!-- 
             <input list="list" name="browsers" value="">
             <datalist id="list">
                     <option value="Opera">
@@ -92,23 +97,25 @@
                     <option value="Firefox">
                     <option value="Safari">
                     <option value="Microsoft Edge">
-            </datalist>
+            </datalist> -->
 
     <!-- form tag -->
 
-        <form>
+        <!-- <form>
             <fieldset>
-                <legend>This is form tag</legend>
+                <legend>Form Demo</legend>
                 <figcaption><b>This is form tag</b></figcaption><br>
-                <label for="name">Name:</label>
-                <input type="text" name="name" readonly disabled><br><br>
+                <label for="name">First Name:</label>
+                <input type="text" name="name" required><br><br>
+                <label for="name">Last Name:</label>
+                <input type="text" name="name" required><br><br>
                 <label for="Gender">Gender:</label>
                 <input type="radio" name="Gender" id="male" value="male" required>
                 <label for="male">Male</label>
                 <input type="radio" name="Gender" id="female" value="female" required>
                 <label for="female">Female</label> <br><br>
                 <label for="country">Country: </label>
-                <select name="country" id="country">
+                <select name="country" id="country" required>
                     <option>Select an option</option>
                     <option value="nepal">Nepal</option>
                     <option value="usa">USA</option>
@@ -121,34 +128,43 @@
                 <label for="newsletter">Subscribe?</label><br><br>
                 <input type="submit" value="Submit">
             </fieldset>
-        </form>
+        </form> -->
 
     <!-- figure tag -->
 
-        <figure>
-            <img src="asset/eiffel-tower.jpg" alt="">
-            <figcaption>this is image tag</figcaption>
-        </figure>
+        <!-- <figure>
+            <img src="asset/Monalisa.jpg" alt="">
+            <figcaption>Artist:-	Leonardo da Vinci</figcaption>
+        </figure> -->
 
     <!-- span tag / inline tag -->
         
-        <span></span>
+        <!-- <span>65464464</span>
+        <span>564564564</span>
         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. <span style="color:red; font-weight:bold; text-decoration:underline; background-color: green;">Est voluptatem doloremque neque omnis voluptates adipisci</span> minus ullam vero voluptatibus.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt hic dolores veniam explicabo sunt placeat vero nihil, quo magni laborum aut modi, nam numquam perferendis cum. Enim maiores non impedit!</p> -->
 
     <!-- iframe tag -->
 
-        <iframe src="asset/good-icon.webp" frameborder="1" width="600px" height="600px"></iframe>
+        <!-- <iframe src="../animation.html" frameborder="1" height="500px" width="500px"></iframe> -->
 
     <!-- nav tag / blocklevel tag-->
 
-        <nav>
+        <!-- <nav>
             <a href="#">Home</a>
             <a href="#">Pages</a>
             <a href="#">About</a>
             <a href="#">Contect</a>
             <a href="#">Blogs</a>
             <a href="#">Other</a>
-        </nav>
+        </nav> -->
+
+    <script>
+            function myFunction(){
+                var item =  document.getElementById("selectdemo").value;
+                document.getElementById("demo").innerHTML= item;
+        }
+    </script>
 
 </body>
 
